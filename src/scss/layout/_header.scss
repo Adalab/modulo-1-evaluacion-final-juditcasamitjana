@@ -1,0 +1,6 @@
+@use "../core/variables" as vars;
+
+header {
+    background-color: vars.$color-main;
+    color: white;
+}
