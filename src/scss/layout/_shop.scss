@@ -1,0 +1,44 @@
+@use "../core/variables" as vars;
+
+section.shop {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 40px;
+
+    & h2.shop__title {
+        font-family: vars.$font-text;
+        color: vars.$color-moss-green;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    & h3.shop__subtitle {
+        font-family: vars.$font-title;
+        font-size: 29px;
+        font-weight: 480;
+        padding: 10px 0;
+    }
+
+    & p.shop__text {
+        font-family: vars.$font-text;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: justify;
+        padding: 1px 0 70px;
+    }
+
+    & a.shop__btn {
+        border-style: solid ;
+        border-color: vars.$color-moss-green;
+        border-radius: 40px;
+        width: 210px;
+        height: 60px;
+        font-family: vars.$font-text;
+        color: vars.$color-moss-green;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
