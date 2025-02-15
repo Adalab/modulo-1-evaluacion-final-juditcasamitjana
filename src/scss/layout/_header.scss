@@ -28,10 +28,9 @@ header.hero {
         & img.hero__menu {
             width: 20px;
         }
+        
     }
-    
-    
-    
+        
     & h1.hero__title {
         font-family: vars.$font-title;
         font-size: 40px;
@@ -46,7 +45,7 @@ header.hero {
         width: 57%;
     }
     
-    & div.hero__icon {
+    & div.hero__btn {
         background-color: vars.$color-light;
         width: 40px;
         height: 40px;
@@ -55,8 +54,6 @@ header.hero {
         justify-content: center;
         align-items: center;
         margin: 20px 0 70px;
+        
     }
 }
-
-
-
