@@ -5,6 +5,10 @@ section.shop {
     flex-direction: column;
     padding: 30px 20px 40px;
 
+    @media (min-width: 768px){
+        padding: 30px 50px 80px;
+    }
+
     & h2.shop__title {
         font-family: vars.$font-text;
         color: vars.$color-moss-green;
@@ -26,6 +30,10 @@ section.shop {
         line-height: 1.5;
         text-align: justify;
         padding: 1px 0 70px;
+
+        @media (min-width: 768px){
+            padding: 1px 0px 30px;
+        }
     }
 
     & a.shop__btn {

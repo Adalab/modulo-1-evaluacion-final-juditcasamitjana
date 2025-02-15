@@ -7,12 +7,27 @@ section.back-to-school {
     grid-template-rows: 40px 35px 190px 40px 190px 40px 190px 40px 100px;
     justify-items: center;
 
+    @media (min-width: 768px){
+        grid-template-rows: 40px 40px 200px 35px 155px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "text text text"
+            "title title title"
+            "photo-backpacks photo-cases photo-bags"
+            "backpacks cases bags"
+            "start start start"
+    }
+    
     & p.back-to-school__text {
         color: vars.$color-brownish-grey;
         font-family: vars.$font-title;
         font-size: 15px;
         font-weight: 700;
         align-self: end;
+
+        @media (min-width: 768px){
+            grid-area: text;
+        }
     }
 
     & h3.back-to-school__subtitle {
@@ -20,19 +35,32 @@ section.back-to-school {
         font-family: vars.$font-title;
         font-size: 25px;
         align-self: center;
-    }
 
+        @media (min-width: 768px){
+            grid-area: title;
+        }
+    }
+    
     & img.back-to-school__backpacks {
         width: 165px;
         border-radius: 50%;
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
         align-self: end;
+
+        @media (min-width: 768px){
+            grid-area: photo-backpacks;
+            // justify-self: end;
+        }
     }
 
     & h4.back-to-school__backpacks {
         font-family: vars.$font-title;
         font-size: 19px;
         align-self: center;
+
+        @media (min-width: 768px){
+            grid-area: backpacks;
+        }
     }
 
     & img.back-to-school__cases {
@@ -40,12 +68,20 @@ section.back-to-school {
         border-radius: 50%;
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
         align-self: end;
+
+        @media (min-width: 768px){
+            grid-area: photo-cases;
+        }
     }
 
     & h4.back-to-school__cases {
         font-family: vars.$font-title;
         font-size: 19px;
         align-self: center;
+
+        @media (min-width: 768px){
+            grid-area: cases;
+        }
     }
 
     & img.back-to-school__bags {
@@ -53,12 +89,20 @@ section.back-to-school {
         border-radius: 50%;
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
         align-self: end;
+
+        @media (min-width: 768px){
+            grid-area: photo-bags;
+        }
     }
 
     & h4.back-to-school__bags {
         font-family: vars.$font-title;
         font-size: 19px;
         align-self: center;
+
+        @media (min-width: 768px){
+            grid-area: bags;
+        }
     }
 
     & a.back-to-school__btn {
@@ -74,5 +118,10 @@ section.back-to-school {
         height: 60px;
         border-radius: 50px;
         margin-top: 7px;
+
+        @media (min-width: 768px){
+            grid-area: start;
+            margin-top: 30px;
+        }
     }
 }
