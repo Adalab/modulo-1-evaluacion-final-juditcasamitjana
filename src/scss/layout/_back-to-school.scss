@@ -8,6 +8,7 @@ section.back-to-school {
     justify-items: center;
 
     @media (min-width: 768px){
+        padding: 0px 30px;
         grid-template-rows: 40px 40px 200px 35px 155px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
