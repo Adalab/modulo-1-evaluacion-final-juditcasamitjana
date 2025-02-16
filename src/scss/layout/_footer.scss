@@ -59,6 +59,12 @@ footer.footer {
         & a.footer__link {
             display: block;
             padding: 7px;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: vars.$color-moss-green;
+            }
         }
     }
 
@@ -75,6 +81,12 @@ footer.footer {
         & a.footer__link {
             display: block;
             padding: 7px;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: vars.$color-moss-green;
+            }
         }
     }
 
