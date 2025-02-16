@@ -18,6 +18,10 @@ section.back-to-school {
             "backpacks cases bags"
             "start start start"
     }
+
+    @media (min-width: 1200px) {
+        padding: 0 170px;
+    }
     
     & p.back-to-school__text {
         color: vars.$color-brownish-grey;
@@ -41,13 +45,7 @@ section.back-to-school {
             grid-area: title;
         }
     }
-
-    & img:hover {
-        -webkit-animation: bounce-top 0.9s both;
-        animation: bounce-top 0.9s both;
-    }
-    
-    
+      
     & img.back-to-school__backpacks {
         width: 165px;
         border-radius: 50%;

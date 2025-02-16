@@ -9,6 +9,10 @@ section.shop {
         padding: 30px 50px 80px;
     }
 
+    @media (min-width: 1200px) {
+        padding: 30px 180px 80px;
+    }
+
     & h2.shop__title {
         font-family: vars.$font-text;
         color: vars.$color-moss-green;
