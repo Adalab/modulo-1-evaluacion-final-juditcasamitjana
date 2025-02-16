@@ -14,16 +14,6 @@ header.hero {
     align-items: center;
     text-align: center;
 
-    @media (min-width: 768px) {
-        background-size: 150%;
-        background-position: 63% 30%;
-    }
-
-    @media (min-width: 1200px) {
-        background-size: 110%;
-        background-position: 63% 76%;
-    }
-
     & div.hero__menu {
         background-color: vars.$color-moss-green;
         width: 40px;
