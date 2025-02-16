@@ -49,5 +49,12 @@ section.shop {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {            
+            background-color: vars.$color-moss-green;
+            color: vars.$color-light;
+            border-color: vars.$color-light-grey;
+            transition: 0.5s ease-in-out all;
+        }
     }
 }

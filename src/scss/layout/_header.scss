@@ -25,6 +25,10 @@ header.hero {
         justify-content: center;
         align-items: center;
 
+        &:hover {            
+            background-color: vars.$color-brownish-grey;
+        }
+
         & img.hero__menu {
             width: 20px;
         }
@@ -44,7 +48,7 @@ header.hero {
         font-size: 20x;
         width: 57%;
     }
-    
+
     & div.hero__btn {
         background-color: vars.$color-light;
         width: 40px;
@@ -54,6 +58,11 @@ header.hero {
         justify-content: center;
         align-items: center;
         margin: 20px 0 70px;
+
+        &:hover {            
+            -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+            animation: pulsate-bck 0.5s ease-in-out infinite both;
+        }
         
     }
 }
