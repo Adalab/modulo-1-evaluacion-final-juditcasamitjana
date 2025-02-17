@@ -1,64 +1,64 @@
 @use "../core/variables" as vars;
 
 section.shop {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 40px;
+
+  @media (min-width: 768px) {
+    padding: 30px 50px 80px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 30px 180px 80px;
+  }
+
+  & h2.shop__title {
+    font-family: vars.$font-text;
+    color: vars.$color-moss-green;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  & h3.shop__subtitle {
+    font-family: vars.$font-title;
+    font-size: 29px;
+    font-weight: 480;
+    padding: 10px 0;
+  }
+
+  & p.shop__text {
+    font-family: vars.$font-text;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 1px 0 70px;
+
+    @media (min-width: 768px) {
+      padding: 1px 0px 30px;
+    }
+  }
+
+  & a.shop__btn {
+    border-style: solid;
+    border-color: vars.$color-moss-green;
+    border-radius: 40px;
+    width: 210px;
+    height: 55px;
+    font-family: vars.$font-text;
+    color: vars.$color-moss-green;
+    font-size: 25px;
+    font-weight: 500;
     display: flex;
-    flex-direction: column;
-    padding: 30px 20px 40px;
+    justify-content: center;
+    align-items: center;
 
-    @media (min-width: 768px){
-        padding: 30px 50px 80px;
+    &:hover {
+      background-color: vars.$color-moss-green;
+      color: vars.$color-light;
+      border-color: vars.$color-light-grey;
+      transition: 0.5s ease-in-out all;
     }
-
-    @media (min-width: 1200px) {
-        padding: 30px 180px 80px;
-    }
-
-    & h2.shop__title {
-        font-family: vars.$font-text;
-        color: vars.$color-moss-green;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    & h3.shop__subtitle {
-        font-family: vars.$font-title;
-        font-size: 29px;
-        font-weight: 480;
-        padding: 10px 0;
-    }
-
-    & p.shop__text {
-        font-family: vars.$font-text;
-        font-size: 23px;
-        font-weight: 300;
-        line-height: 1.5;
-        text-align: justify;
-        padding: 1px 0 70px;
-
-        @media (min-width: 768px){
-            padding: 1px 0px 30px;
-        }
-    }
-
-    & a.shop__btn {
-        border-style: solid ;
-        border-color: vars.$color-moss-green;
-        border-radius: 40px;
-        width: 210px;
-        height: 55px;
-        font-family: vars.$font-text;
-        color: vars.$color-moss-green;
-        font-size: 25px;
-        font-weight: 500;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:hover {            
-            background-color: vars.$color-moss-green;
-            color: vars.$color-light;
-            border-color: vars.$color-light-grey;
-            transition: 0.5s ease-in-out all;
-        }
-    }
+  }
 }
